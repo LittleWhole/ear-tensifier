@@ -1,0 +1,27 @@
+{
+  "name": "Ear Tensifier",
+  "version": "0.0.1",
+  "description": "A simple and modern discord music bot, made with discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "s.ping"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetra-dev/Ear Tensifier.git"
+  },
+  "keywords": [
+    "discord.js"
+  ],
+  "author": "Tetra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tetra-dev/Ear Tensifier/issues"
+  },
+  "homepage": "https://github.com/tetra-dev/Ear Tensifier#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "fs": "0.0.1-security",
+    "simple-youtube-api": "^5.0.2"
+  }
+}
