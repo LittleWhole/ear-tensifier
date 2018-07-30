@@ -16,9 +16,9 @@
   "author": "Tetra",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tetra-dev/Ear Tensifier/issues"
+    "url": "https://github.com/tetra-dev/Ear-Tensifier/issues"
   },
-  "homepage": "https://github.com/tetra-dev/Ear Tensifier#readme",
+  "homepage": "https://github.com/tetra-dev/Ear-Tensifier#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
     "fs": "0.0.1-security",
