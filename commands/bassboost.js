@@ -6,6 +6,7 @@ module.exports = {
 	cooldown: 4,
 	async execute(client, message, args){
 
+		//if(!message.member.hasPermission("ADMINASTRATOR")) return message.channel.send(`Must be an Admin to use this command...`)
         const queue = client.queue.get(message.guild.id);
 
 		if(!message.member.voiceChannel) return message.channel.send(`You must be in a voice channel to use this command.`);

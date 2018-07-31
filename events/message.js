@@ -39,10 +39,10 @@ module.exports = (client, message) => {
       const reply = `You didn't provide any arguments ${message.author}.`;
 
       if (command.usage) {
-        reply += `\nThe proper usage would be: \`${pref}${command.name} ${command.usage}\``;
+        const usage = `\nThe proper usage would be: \`${pref}${command.name} ${command.usage}\``;
       }
 
-      return message.channel.send(reply);
+      return message.channel.send(reply + usage);
     }
 
     if (!cooldowns.has(command.name)) {

@@ -12,32 +12,19 @@ const fs = require("fs");
 **List of available commands**
 
 Type \`-><command>\` to use a command.
-
           
 **Bassboost** - Bassboosts the current playing song  
-
 **Help** - Sends you a list of commands
-
 **Normal** - Resets the volume back to normal
-
 **Pause** - Pauses the current playing song
-
 **Ping** - Sends you the client\'s ping and API latency
-
 **Play** - Plays the song you search for in the voice channel you are in
-
 **Playing** - Shows the current playing song
-
 **Queue** - Lists all the songs in the currents queue
-
 **Resume** - Resumes the current playing song
-
 **Skip** - Skips the currently playing song
-
 **Stop** - Stops playing music
-
 **Veryloud** - Makes the music very loud and bad quality
-
 **Volume** - Shows/sets the volume of the song
 
 Need more help? Join the support server: https://discord.gg/xKgKMAP
