@@ -25,7 +25,7 @@ module.exports = {
 
 		if(isNaN(args[0])) return message.channel.send(`Not a valid number.`)
 		if(args[0] > 10 || args[0] < 1){
-			return message.channel.send(`Your value can only be between 0-10.`)
+			return message.channel.send(`Your value can only be between 0-50.`)
 		}
 		queue.volume = args[0];
 		queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 2);
