@@ -15,6 +15,7 @@ Type \`-><command>\` to use a command.
           
 **Bassboost** - Bassboosts the current playing song  
 **Help** - Sends you a list of commands
+**Loop/Unloop** - Loops or unloops the current playing song
 **Normal** - Resets the volume back to normal
 **Pause** - Pauses the current playing song
 **Ping** - Sends you the client\'s ping and API latency

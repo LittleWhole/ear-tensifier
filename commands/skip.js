@@ -8,7 +8,8 @@ module.exports = {
         const queue = client.queue.get(message.guild.id);
         
         if(!message.member.voiceChannel) return message.channel.send(`You must be in a voice channel to use this command.`);
+        queue.loop = false;
 		queue.connection.dispatcher.end(`Skip Command Used`);
-        
+        message.channel.send(`Skipped by **${message.author.username}**`);
 	},
 };

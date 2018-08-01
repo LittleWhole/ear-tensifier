@@ -96,7 +96,8 @@ module.exports = {
                     connection: null,
                     songs: [],
                     volume: 5,
-                    playing: true
+                    playing: true,
+                    loop: false
                 };
                 client.queue.set(message.guild.id, queueConstruct);
         
@@ -137,16 +138,32 @@ module.exports = {
                 client.queue.delete(guild.id);
                 return;
             }
-            console.log(serverQueue.songs);
+
+            //console.log(serverQueue.songs);
         
-            const dispatcher = serverQueue.connection.playStream(ytdl(song.url))
+            const dispatcher = serverQueue.connection.playStream(ytdl(song.url))/** 
                 .on('end', reason => {
                     if (reason === 'Stream is not generating quickly enough.') console.log('Song ended.');
                     else console.log(reason);
                     serverQueue.songs.shift();
                     play(guild, serverQueue.songs[0]);
-                })
-                .on('error', error => console.error(error));
+                })*/
+                
+
+                .on('end', () => { // when the song ends
+                    if (!serverQueue.loop) { // if its not looped
+                    serverQueue.songs.shift();
+                      setTimeout(() => { // wait 250ms before playing a song due to songs skipping
+                        play(guild, serverQueue.songs[0]);
+                      }, 250); 
+                    } else { // if it is looped it doens't remove the first item
+                      setTimeout(() => {  // wait 250ms before playing a song due to songs skipping
+                        play(guild, serverQueue.songs[0]); // play the song
+                      }, 250);		   
+                    }
+                  })
+                  .on('error', error => console.error(error));
+                  
             dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
             const songdurh = String(song.durationh).padStart(2, '0'); //Hours
@@ -163,7 +180,7 @@ module.exports = {
             .setColor(colors.discord);
         
             //channelQueue.textChannel.send(`Now playing - **${song.title}** (${songdurh}:${songdurm}:${songdurs}) added by **${song.author}**`)
-            channelQueue.textChannel.send(embed)
+            if (!serverQueue.loop) return channelQueue.textChannel.send(embed)
         }
 
     },

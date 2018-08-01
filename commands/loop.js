@@ -10,10 +10,10 @@ module.exports = {
 		if (!queue) return message.channel.send('There is nothing playing to stop.');
         if (queue.loop) {
             queue.loop = false;
-          return message.channel.send(`Song has been unlooped by **${message.author}**`);
+          return message.channel.send(`Song has been unlooped by **${message.author.username}**`);
         } else {
             queue.loop = true;
-        return message.channel.send(`Song has been unlooped by ${message.author}`);
+        return message.channel.send(`Song has been looped by **${message.author.username}**`);
         }
 	},
 };
