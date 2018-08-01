@@ -155,11 +155,11 @@ module.exports = {
                     serverQueue.songs.shift();
                       setTimeout(() => { // wait 250ms before playing a song due to songs skipping
                         play(guild, serverQueue.songs[0]);
-                      }, 250); 
+                      }, 50); 
                     } else { // if it is looped it doens't remove the first item
                       setTimeout(() => {  // wait 250ms before playing a song due to songs skipping
                         play(guild, serverQueue.songs[0]); // play the song
-                      }, 250);		   
+                      }, 50);		   
                     }
                   })
                   .on('error', error => console.error(error));

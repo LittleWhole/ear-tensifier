@@ -24,6 +24,7 @@ Type \`-><command>\` to use a command.
 **Queue** - Lists all the songs in the currents queue
 **Resume** - Resumes the current playing song
 **Skip** - Skips the currently playing song
+**Stats** - Shows stats on the bot
 **Stop** - Stops playing music
 **Veryloud** - Makes the music very loud and bad quality
 **Volume** - Shows/sets the volume of the song
