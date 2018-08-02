@@ -1,7 +1,7 @@
 module.exports = {
     name: 'stop',
 	description: 'Stops playing music.',
-	cooldown: '60',
+	cooldown: '30',
 
 	async execute(client, message, args){
 		

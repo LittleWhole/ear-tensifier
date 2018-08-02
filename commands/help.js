@@ -15,6 +15,8 @@ Type \`-><command>\` to use a command.
           
 **Bassboost** - Bassboosts the current playing song  
 **Help** - Sends you a list of commands
+**Join** - Joins the voice channel you are in
+**Leave** - Leaves the voice channel you are in
 **Loop/Unloop** - Loops or unloops the current playing song
 **Normal** - Resets the volume back to normal
 **Pause** - Pauses the current playing song
