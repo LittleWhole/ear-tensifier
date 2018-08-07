@@ -31,7 +31,7 @@ module.exports = {
         const statsEmbed = new Discord.RichEmbed()
         .setAuthor("Ear Tensifier")
         .setColor(colors.discord)
-        .setThumbnail(settings.icon)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/476311887009808384/476378266404388872/ezgif.com-crop.gif`)
         .addField(`Servers`, `${client.guilds.size}`, true)
         .addField(`Users`, `${users}`, true)
         .addField(`Channels`, `${client.channels.size}`, true)
