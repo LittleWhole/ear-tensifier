@@ -38,7 +38,7 @@ module.exports = {
         .addField(`Memory Usage`, `${Math.round(used * 100) / 100}MB`, true)
         .addField(`Ping`, `Latency \`${loading.createdTimestamp - message.createdTimestamp}ms\`\nAPI Latency \`${Math.round(client.ping)}ms\``, true)
         .addField(`Software`, `Node: ${process.version} | Library: discord.js | ARCH: ${arch} | Plataform: ${os.platform}`)
-        .addField(`Uptime`, `${days}, ${hours} hours, ${mins} minutes, and ${realTotalSecs} seconds`);
+        .addField(`Uptime`, `${days} days, ${hours} hours, ${mins} minutes, and ${realTotalSecs} seconds`);
         loading.edit(statsEmbed);
 	},
 };
