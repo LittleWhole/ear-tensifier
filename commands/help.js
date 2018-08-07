@@ -12,9 +12,12 @@ const fs = require("fs");
 **List of available commands**
 
 Type \`-><command>\` to use a command.
-          
+      
+**About** - Info about the bot
 **Bassboost** - Bassboosts the current playing song  
+**Github** - Links you to the github of the bot
 **Help** - Sends you a list of commands
+**Invite** - Sends you the invite link for the bot
 **Join** - Joins the voice channel you are in
 **Leave** - Leaves the voice channel you are in
 **Loop/Unloop** - Loops or unloops the current playing song
@@ -28,6 +31,7 @@ Type \`-><command>\` to use a command.
 **Skip** - Skips the currently playing song
 **Stats** - Shows stats on the bot
 **Stop** - Stops playing music
+**Support** - Sends the support server for the bot
 **Veryloud** - Makes the music very loud and bad quality
 **Volume** - Shows/sets the volume of the song
 
