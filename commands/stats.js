@@ -29,9 +29,11 @@ module.exports = {
         client.guilds.map(g => users += g.memberCount);
 
         const statsEmbed = new Discord.RichEmbed()
-        .setAuthor("Ear Tensifier")
+        .setAuthor("Ear Tensifier", `https://cdn.discordapp.com/avatars/472714545723342848/8c4f6aee86d43d0047698f87de68f5d5.png?size=2048`)
         .setColor(colors.discord)
         .setThumbnail(`https://cdn.discordapp.com/attachments/476311887009808384/476378266404388872/ezgif.com-crop.gif`)
+        .addField("Born On", client.user.createdAt)
+        .addField("Current Version", settings.version, true)
         .addField(`Servers`, `${client.guilds.size}`, true)
         .addField(`Users`, `${users}`, true)
         .addField(`Channels`, `${client.channels.size}`, true)

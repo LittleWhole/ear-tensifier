@@ -17,7 +17,7 @@ module.exports = (client, guild) => {
       .setFooter(`Created On - ${moment(guild.createdAt).format('LLLL')}`, guild.iconURL)
       .setTimestamp();
 
-      guild.client.channels.get("434521909745549333").send(guildEmbed);
+      guild.client.channels.get("483039673057411072").send(guildEmbed);
     } catch (error) {
       console.error(error);
     }
