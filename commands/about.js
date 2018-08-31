@@ -13,10 +13,10 @@ module.exports = {
         .setColor(colors.discord)
         .setThumbnail(`https://cdn.discordapp.com/attachments/476311887009808384/476378266404388872/ezgif.com-crop.gif`)
         .setDescription("**Developer**: Tetra#0002 | **Version:** " + config.version + " | **Library:** discord.js\nEar Tensifier is an easy to use, simple music bot that can bassboost, and loudify songs.")
-        .addField("Website", "https://ear-tensifier.github.io", true)
-        .addField("Invite", "https://ear-tensifier.github.io/invite", true)
+        .addField("Website", "https://eartensifier.com", true)
+        .addField("Invite", "https://eartensifier.com/invite", true)
         .addField("Server", "https://discord.gg/xKgKMAP", true)
-        .addField("Donate", "https://ear-tensifier.github.io/donate", true);
+        .addField("Donate", "https://eartensifier.com/donate", true);
     
         message.channel.send(botEmbed);
 	},

@@ -4,6 +4,6 @@ module.exports = {
     cooldown: '3',
     aliases: [`site`],
 	async execute(client, message, args){
-        message.channel.send(`https://ear-tensifier.github.io/`)
+        message.channel.send(`https://eartensifier.com/`)
 	},
 };

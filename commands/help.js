@@ -18,7 +18,7 @@ const colors = require("../data/colors.json")
             let botEmbed = new Discord.RichEmbed()
             .setAuthor("Ear Tensifier", "https://cdn.discordapp.com/avatars/472714545723342848/8c4f6aee86d43d0047698f87de68f5d5.png?size=2048")
             .setColor(colors.discord)
-            .setDescription("**Help Command:** [Website](https://ear-tensifier.github.io) - [Invite](https://ear-tensifier.github.io/invite) - [Server](https://discord.gg/xKgKMAP) - [Donate](https://ear-tensifier.github.io/donate)  ");
+            .setDescription("**Help Command:** [Website](https://eartensifier.com) - [Invite](https://eartensifier.com/invite) - [Server](https://discord.gg/xKgKMAP) - [Donate](https://eartensifier.com/donate)  ");
 
         
           
