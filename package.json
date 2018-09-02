@@ -1,5 +1,6 @@
 {
   "name": "Ear Tensifier",
+  "private": true,
   "version": "0.2.1",
   "description": "A simple and modern discord music bot, made with discord.js",
   "main": "index.js",
@@ -23,5 +24,7 @@
     "discord.js": "^11.3.2",
     "fs": "0.0.1-security",
     "simple-youtube-api": "^5.0.2"
-  }
+  },
+  "os": "linux",
+  "cpu": "x64"
 }
